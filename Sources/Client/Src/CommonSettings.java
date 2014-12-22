@@ -50,6 +50,6 @@ public interface CommonSettings
 	public int EMOTION_CANVAS_HEIGHT			=	270;
 	
 	public int MAX_PRIVATE_WINDOW				=	40;
-	public String PRODUCT_NAME					= "Turtle Chat v1.0";
-	public String COMPANY_NAME					= "Turtle Technologies (India) Pvt Ltd..";
+	public String PRODUCT_NAME					= "Alpha Chat";
+	public String COMPANY_NAME					= "Karan & Comp.";
 }

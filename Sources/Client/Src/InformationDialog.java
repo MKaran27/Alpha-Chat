@@ -41,7 +41,7 @@ public class InformationDialog extends Dialog implements ActionListener,CommonSe
 		ButtonPanel.setBackground(chatclient.ColorMap[3]);
 		
 		Label LblUserName = new Label("Nick Name: ");
-		TxtUserName = new TextField(properties.getProperty("TurtleUserName"));		
+		TxtUserName = new TextField(properties.getProperty("UserName"));		
 		ButtonPanel.add(LblUserName);
 		ButtonPanel.add(TxtUserName);
 		
@@ -49,7 +49,7 @@ public class InformationDialog extends Dialog implements ActionListener,CommonSe
 				
 		TxtServerName = new TextField();
 		if (properties.getProperty("TurtleServerName") != null)
-			TxtServerName.setText(properties.getProperty("TurtleServerName"));
+			TxtServerName.setText(properties.getProperty("ServerName"));
 		else
 			TxtServerName.setText("turtleindia.dns2go.com");
 			
@@ -59,7 +59,7 @@ public class InformationDialog extends Dialog implements ActionListener,CommonSe
 		Label LblServerPort = new Label("Server Port: ");		
 		TxtServerPort = new TextField();
 		if (properties.getProperty("TurtleServerPort") != null)
-			TxtServerPort.setText(properties.getProperty("TurtleServerPort"));
+			TxtServerPort.setText(properties.getProperty("ServerPort"));
 		else
 			TxtServerPort.setText("1436");
 			
@@ -69,20 +69,20 @@ public class InformationDialog extends Dialog implements ActionListener,CommonSe
 		Label LblProxy = new Label("Proxy :");
 		IsProxyCheckBox = new Checkbox();
 		
-		IsProxyCheckBox.setState(Boolean.valueOf(properties.getProperty("TurtleProxyState")).booleanValue());
+		IsProxyCheckBox.setState(Boolean.valueOf(properties.getProperty("ProxyState")).booleanValue());
 						
 		ButtonPanel.add(LblProxy);
 		ButtonPanel.add(IsProxyCheckBox);
 		
 		Label LblProxyHost = new Label("Proxy Host (Socks): ");
 		TxtProxyHost = new TextField();		
-		TxtProxyHost.setText(properties.getProperty("TurtleProxyHost"));
+		TxtProxyHost.setText(properties.getProperty("ProxyHost"));
 		ButtonPanel.add(LblProxyHost);
 		ButtonPanel.add(TxtProxyHost);
 		
 		Label LblProxyPort = new Label("Proxy Port (Socks): ");
 		TxtProxyPort = new TextField();
-		TxtProxyPort.setText(properties.getProperty("TurtleProxyPort"));
+		TxtProxyPort.setText(properties.getProperty("ProxyPort"));
 		ButtonPanel.add(LblProxyPort);
 		ButtonPanel.add(TxtProxyPort);
 		
